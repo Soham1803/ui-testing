@@ -28,7 +28,7 @@ export default function Plans() {
                     <div className="card card--primary">
                         <header className="card__header">
                             <h3 className="plan__name">Entry</h3>
-                            <span className="plan__price">$14</span>
+                            <span className="plan__price">$24</span>
                             <span className="plan__billing-cycle">/month</span>
                             <span className="badge badge--primary badge--small">10% OFF</span>
                             <span className="plan__description">Easy start on the cloud</span>
@@ -48,7 +48,7 @@ export default function Plans() {
                     <div className="card card--secondary">
                         <header className="card__header">
                             <h3 className="plan__name">Entry</h3>
-                            <span className="plan__price">$14</span>
+                            <span className="plan__price">$34</span>
                             <span className="plan__billing-cycle">/month</span>
                             <span className="badge badge--secondary badge--small">10% OFF</span>
                             <span className="plan__description">Easy start on the cloud</span>
