@@ -8,7 +8,7 @@ export default function Navbar() {
         <header>
             <nav className={`nav collapsible ${expanded ? 'collapsible--expanded' : ''}`}>
                 <a aria-label="Moshify" className="nav__brand" href="/">
-                    <img src="/images/logo.svg" alt="" />
+                    <img src="/images/logo.svg" alt="moshify brand logo" />
                 </a>
                 <svg onClick={() => setExpanded(!expanded)} className="icon icon--white nav__toggler">
                     <use href="/images/sprite.svg#menu"></use>
