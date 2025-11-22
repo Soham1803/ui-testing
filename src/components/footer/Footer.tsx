@@ -34,7 +34,7 @@ export default function Footer() {
                     </ul>
                 </Collapsible>
                 <div className="footer__brand">
-                    <img src="images/logo.svg" alt="" />
+                    <img src="images/logo.svg" alt="moshify brand logo" />
                     <p className="footer__copyright">Copyright 2020 Mosh Hamedani</p>
                 </div>
             </div>
