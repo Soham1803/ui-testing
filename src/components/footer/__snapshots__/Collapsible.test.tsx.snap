@@ -1,37 +1,5 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Collapsible Component > Snapshot > matches the snapshot 1`] = `
-<div>
-  <section
-    class="collapsible footer__section "
-  >
-    <div
-      class="collapsible__header"
-    >
-      <h2
-        class="collapsible__heading footer__heading"
-      >
-        Test Title
-      </h2>
-      <svg
-        class="icon icon--white collapsible__chevron"
-      >
-        <use
-          href="images/sprite.svg#chevron"
-        />
-      </svg>
-    </div>
-    <div
-      class="collapsible__content"
-    >
-      <p>
-        Test Content
-      </p>
-    </div>
-  </section>
-</div>
-`;
-
 exports[`Collapsible Component > matches the snapshot 1`] = `
 <div>
   <section
