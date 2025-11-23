@@ -75,4 +75,8 @@ test.describe('Moshify Landing Page', () => {
         await chevron.click();
         await expect(productsSection).not.toHaveClass(/collapsible--expanded/);
     });
+
+    test('Visual Snapshot', async ({ page }) => {
+        await expect(page).toHaveScreenshot('landing-page.png', { fullPage: true });
+    });
 });
