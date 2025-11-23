@@ -53,4 +53,9 @@ describe('Plans Component', () => {
     render(<Plans />);
     expect(screen.getAllByText('10% OFF')).toHaveLength(3);
   });
+
+  it('matches the snapshot', () => {
+    const { container } = render(<Plans />);
+    expect(container).toMatchSnapshot();
+  });
 });

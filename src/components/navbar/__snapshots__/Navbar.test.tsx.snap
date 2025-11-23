@@ -1,0 +1,145 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Navbar Component > Snapshot > matches the snapshot 1`] = `
+<div>
+  <header>
+    <nav
+      class="nav collapsible "
+    >
+      <a
+        aria-label="Moshify"
+        class="nav__brand"
+        href="/"
+      >
+        <img
+          alt="moshify brand logo"
+          src="/images/logo.svg"
+        />
+      </a>
+      <svg
+        class="icon icon--white nav__toggler"
+      >
+        <use
+          href="/images/sprite.svg#menu"
+        />
+      </svg>
+      <ul
+        class="list nav__list collapsible__content"
+      >
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            Hosting
+          </a>
+        </li>
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            VPS
+          </a>
+        </li>
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            Domain
+          </a>
+        </li>
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            Pricing
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;
+
+exports[`Navbar Component > matches the snapshot 1`] = `
+<div>
+  <header>
+    <nav
+      class="nav collapsible "
+    >
+      <a
+        aria-label="Moshify"
+        class="nav__brand"
+        href="/"
+      >
+        <img
+          alt="moshify brand logo"
+          src="/images/logo.svg"
+        />
+      </a>
+      <svg
+        class="icon icon--white nav__toggler"
+      >
+        <use
+          href="/images/sprite.svg#menu"
+        />
+      </svg>
+      <ul
+        class="list nav__list collapsible__content"
+      >
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            Hosting
+          </a>
+        </li>
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            VPS
+          </a>
+        </li>
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            Domain
+          </a>
+        </li>
+        <li
+          class="nav__item"
+        >
+          <a
+            href="https://codewithmosh.com"
+            target="_blank"
+          >
+            Pricing
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;

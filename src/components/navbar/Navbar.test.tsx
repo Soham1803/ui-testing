@@ -42,4 +42,9 @@ describe('Navbar Component', () => {
       expect(link).toHaveAttribute('href', 'https://codewithmosh.com');
     });
   });
+
+  it('matches the snapshot', () => {
+    const { container } = render(<Navbar />);
+    expect(container).toMatchSnapshot();
+  });
 });

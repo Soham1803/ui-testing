@@ -62,4 +62,13 @@ describe('Collapsible Component', () => {
         await user.click(chevron!);
         expect(container.querySelector('section')).not.toHaveClass('collapsible--expanded');
     });
+
+    it('matches the snapshot', () => {
+        const { container } = render(
+            <Collapsible title="Test Title">
+                <p>Test Content</p>
+            </Collapsible>
+        );
+        expect(container).toMatchSnapshot();
+    });
 });

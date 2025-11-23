@@ -75,4 +75,9 @@ describe('Features Component', () => {
     });
   });
 
+  it('matches the snapshot', () => {
+    const { container } = render(<Features />);
+    expect(container).toMatchSnapshot();
+  });
+
 })

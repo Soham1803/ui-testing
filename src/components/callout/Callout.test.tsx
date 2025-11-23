@@ -14,4 +14,9 @@ describe("Callout Component", () => {
     const linkElement = screen.getByRole('link', { name: 'Get Started' });
     expect(linkElement).toBeInTheDocument();
   })
+
+  it('matches the snapshot', () => {
+    const { container } = render(<Callout />);
+    expect(container).toMatchSnapshot();
+  });
 });

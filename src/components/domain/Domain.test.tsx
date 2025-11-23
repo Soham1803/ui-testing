@@ -29,4 +29,9 @@ describe("Domain Component", () => {
     })
   });
 
+  it('matches the snapshot', () => {
+    const { container } = render(<Domain />);
+    expect(container).toMatchSnapshot();
+  });
+
 });

@@ -68,4 +68,9 @@ describe('Showcase Component', () => {
       expect(useTag).toHaveAttribute('href', `images/sprite.svg#${expectedIcons[index]}`);
     });
   });
+
+  it('matches the snapshot', () => {
+    const { container } = render(<Showcase />);
+    expect(container).toMatchSnapshot();
+  });
 });

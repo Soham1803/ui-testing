@@ -41,4 +41,9 @@ describe('Testimonial Component', () => {
         const lineIcon = icons[1];
         expect(lineIcon.querySelector('use')).toHaveAttribute('href', 'images/sprite.svg#line');
     });
+
+    it('matches the snapshot', () => {
+        const { container } = render(<Testimonial />);
+        expect(container).toMatchSnapshot();
+    });
 });

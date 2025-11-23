@@ -4,19 +4,19 @@ import Hero from './Hero';
 describe('Hero Component', () => {
   it('renders the hero section with correct content', () => {
     render(<Hero />);
-    
+
     // Check for heading
     const heading = screen.getByRole('heading', { name: /Cloud Hosting for Pros/i });
     expect(heading).toBeInTheDocument();
-    
+
     // Check for tagline
     const tagline = screen.getByText(/Deploy your websites in less than 60 seconds./i);
     expect(tagline).toBeInTheDocument();
-    
+
     // Check for Get Started button
     const getStartedButton = screen.getByRole('link', { name: /Get Started/i });
     expect(getStartedButton).toBeInTheDocument();
-    expect(getStartedButton).toHaveAttribute('href', 'https://codewithmosh.com');    
+    expect(getStartedButton).toHaveAttribute('href', 'https://codewithmosh.com');
   });
 
   it('renders responsive images with picture tag', () => {
@@ -42,6 +42,11 @@ describe('Hero Component', () => {
     expect(image).toBeInTheDocument();
     expect(image).toHaveAttribute('src', 'images/banner.png');
     expect(image).toHaveClass('hero__image');
-    
+
+  });
+
+  it('matches the snapshot', () => {
+    const { container } = render(<Hero />);
+    expect(container).toMatchSnapshot();
   });
 });

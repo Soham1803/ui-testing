@@ -11,7 +11,7 @@ describe('Footer Component', () => {
 
   it('renders the logo image', () => {
     render(<Footer />);
-    const logoElement  = screen.getByRole('img', { name: 'moshify brand logo' } );
+    const logoElement = screen.getByRole('img', { name: 'moshify brand logo' });
     expect(logoElement).toBeInTheDocument();
   });
 
@@ -62,6 +62,11 @@ describe('Footer Component', () => {
         expect(screen.getByText(linkText)).toBeInTheDocument();
       });
     }
+  });
+
+  it('matches the snapshot', () => {
+    const { container } = render(<Footer />);
+    expect(container).toMatchSnapshot();
   });
 });
 
