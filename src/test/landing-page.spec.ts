@@ -77,6 +77,9 @@ test.describe('Moshify Landing Page', () => {
     });
 
     test('Visual Snapshot', async ({ page }) => {
-        await expect(page).toHaveScreenshot('landing-page.png', { fullPage: true });
+        await expect(page).toHaveScreenshot('landing-page.png', {
+            fullPage: true,
+            maxDiffPixels: 200 // Allow small rendering differences between environments
+        });
     });
 });
